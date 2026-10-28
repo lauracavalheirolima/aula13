@@ -1,0 +1,110 @@
+/* Estilos simples para a loja */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f7f4f2;
+    color: #333;
+}
+header {
+    background: white;
+    padding: 18px 7%;
+    border-bottom: 1px solid #ddd;
+}
+header h1 {
+    margin: 0 0 12px;
+    color: #8b4d5c;
+}
+nav a {
+    margin-right: 18px;
+    color: #333;
+    text-decoration: none;
+}
+nav a:hover { text-decoration: underline; }
+main { padding: 30px 7%; }
+.apresentacao {
+    padding: 28px;
+    background: #f0e2e4;
+    border-radius: 6px;
+}
+.apresentacao h2 { margin-top: 0; }
+.produtos { margin-top: 35px; }
+.lista-produtos {
+    display: flex;
+    gap: 22px;
+    align-items: stretch;
+}
+.produto {
+    flex: 1;
+    padding: 15px;
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+}
+.produto img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+.produto h3 { margin-bottom: 8px; }
+.comprar, button {
+    display: inline-block;
+    padding: 10px 16px;
+    border: 0;
+    border-radius: 4px;
+    background: #8b4d5c;
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+    cursor: pointer;
+}
+.comprar:hover, button:hover { background: #6f3947; }
+.pagina-formulario {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 35px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+.imagem-formulario {
+    width: 45%;
+    max-height: 570px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+.formulario { flex: 1; max-width: 420px; }
+form label {
+    display: block;
+    margin: 12px 0 5px;
+}
+form input {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #bbb;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 15px;
+}
+form button { margin-top: 18px; }
+.cadastro {
+    max-width: 650px;
+    margin: 0 auto;
+}
+.cadastro section {
+    padding: 25px;
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+}
+footer {
+    margin-top: 25px;
+    padding: 18px 7%;
+    background: #e8dfdf;
+    text-align: center;
+}
+@media (max-width: 700px) {
+    .lista-produtos, .pagina-formulario { flex-direction: column; }
+    .imagem-formulario { width: 100%; max-height: 280px; }
+    .formulario { width: 100%; }
+}
